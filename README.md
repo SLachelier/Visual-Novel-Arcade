@@ -14,11 +14,11 @@ Visual Novel Arcade is a web platform designed for creatives and gamers alike. I
 
 This project is a work in progress, and I am actively developing new features and refining the platform. Below are some previews of the website's current functionality:
 
-- [Animated Home Page Preview](https://gyazo.com/dfbf49561e0c90bd926b2002d046954a)
-- [Text Search Feature Preview](https://gyazo.com/857f04dbc40863d475654ec375312ba9)
-- [Tag-Based Search Preview](https://gyazo.com/9b68a502ef24e3166ddfb6c590dc0f95)
-- [Advanced Tag Filtering Preview](https://gyazo.com/e4fab1bdd67ae328fa325eac59a63911)
-- [Library Search Preview](https://gyazo.com/d27e793033f6af5cbc4178cbab6f69aa)
+- ![Animated Home Page Preview](https://gyazo.com/dfbf49561e0c90bd926b2002d046954a)
+- ![Text Search Feature Preview](https://gyazo.com/857f04dbc40863d475654ec375312ba9)
+- ![Tag-Based Search Preview](https://gyazo.com/9b68a502ef24e3166ddfb6c590dc0f95)
+- ![Advanced Tag Filtering Preview](https://gyazo.com/e4fab1bdd67ae328fa325eac59a63911)
+- ![Library Search Preview](https://gyazo.com/d27e793033f6af5cbc4178cbab6f69aa)
 
 ## Getting Started
 
