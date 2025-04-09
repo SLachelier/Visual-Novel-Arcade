@@ -149,16 +149,17 @@ export default function Library() {
           "Sci-fi",
           "Modern",
           "Supernatural",
+          "Introspective",
+          "Slice of Life",
+          "Survival",
           "Thriller",
           "Tragedy",
           "Comedy",
           "Drama",
-          "Historical",
+          "Historical Fiction",
           "Psychological",
           "Dystopian",
           "School Life",
-          "Boys' Love",
-          "Girls' Love",
           "RPG",
           "Martial Arts",
           "Sports",
@@ -169,6 +170,8 @@ export default function Library() {
           "Villainess",
           "Reincarnation",
           "Magic",
+          "Boys' Love",
+          "Girls' Love",
           "Fan Work",
           "Completed",
           "On-going",
@@ -237,7 +240,7 @@ export default function Library() {
         style={{ opacity: libraryOpacity, y: libraryY }}
         className="mt-24 flex justify-center text-white text-2xl"
       >
-        You&apos;ve reached the end of our current library. Check back for more
+        You&apos;ve reached the end of the current library. Check back for more
         releases later!
       </motion.p>
     </motion.section>

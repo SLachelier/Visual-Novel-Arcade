@@ -18,7 +18,7 @@ export default function Home() {
             <b className="text-3xl text-center font-light w-[36rem] pt-14 pb-0 mb-0">
             Welcome to Visual Novel Arcade!</b>
       <p className="text-xl text-center w-[36rem] pt-8 pb-4">
-        Here you can find a collection of free & interactive visual novels made by our dev team. We are a group of passionate developers & artists who love to create stories and share them with the world. We hope you enjoy our work and have fun exploring our library below.
+        Here you will find a collection of free & interactive visual novels made by me. I am a developer passionate about coding, literature & art that loves to create stories and share them with the world. I hope you enjoy my work and have fun exploring the library below.
       </p>
       <SectionDivider />
       <Library />
