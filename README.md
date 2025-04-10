@@ -12,11 +12,25 @@ Visual Novel Arcade is a web platform designed for creatives and gamers alike. I
 
 ## Current Progress
 
-- ![Animated Home Page Preview](https://raw.githubusercontent.com/SLachelier/visual-novel-arcade/main/public/homepage.gif)
-- ![FramerMotion On Scroll Animations Preview](https://raw.githubusercontent.com/SLachelier/visual-novel-arcade/main/public/scroll-anim.gif)
-- ![Text Search Preview](https://raw.githubusercontent.com/SLachelier/visual-novel-arcade/main/public/text-search.gif)
-- ![Tag-Based Search Preview](https://raw.githubusercontent.com/SLachelier/visual-novel-arcade/main/public/tag-toggling.gif)
-- ![Advanced Tag Filtering Preview](https://raw.githubusercontent.com/SLachelier/visual-novel-arcade/main/public/tag-inclusion-exclusion.gif)
+### Animated Home Page Preview:
+
+![Animated Home Page Preview](https://raw.githubusercontent.com/SLachelier/visual-novel-arcade/main/public/homepage.gif)
+
+### FramerMotion On Scroll Animations Preview
+
+![FramerMotion On Scroll Animations Preview](https://raw.githubusercontent.com/SLachelier/visual-novel-arcade/main/public/scroll-anim.gif)
+
+### Text Search Preview
+
+![Text Search Preview](https://raw.githubusercontent.com/SLachelier/visual-novel-arcade/main/public/text-search.gif)
+
+### Tag-Based Search Preview
+
+![Tag-Based Search Preview](https://raw.githubusercontent.com/SLachelier/visual-novel-arcade/main/public/tag-toggling.gif)
+
+### Advanced Tag Filtering Preview
+
+![Advanced Tag Filtering Preview](https://raw.githubusercontent.com/SLachelier/visual-novel-arcade/main/public/tag-inclusion-exclusion.gif)
 
 ## Getting Started
 
