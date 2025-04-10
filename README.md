@@ -53,13 +53,17 @@ To get started with Visual Novel Arcade in development before its release, follo
 3. Install dependencies:
 
    ```bash
+   npm init
+   ```
+   Then:
+   ```bash
    npm install
    ```
 
-4. Start the development server:
+5. Start the development server:
 
    ```bash
-   npm start
+   npm run dev
    ```
 
 ## Contributing
