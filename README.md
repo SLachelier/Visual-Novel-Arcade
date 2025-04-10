@@ -57,3 +57,4 @@ If you'd like to contribute, please fork the repository and submit a pull reques
 This project is licensed under the [Apache License](LICENSE)
 
 Stay tuned for updates as I continue to build and improve Visual Novel Arcade!
+
