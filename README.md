@@ -7,18 +7,18 @@ Visual Novel Arcade is a web platform designed for creatives and gamers alike. I
 - **Interactive Home Page**: Utilizing [Framer Motion](https://www.framer.com/motion/), to get smooth on-scroll animations for an engaging user experience.
 - **Text Search**: Quickly find visual novels by typing keywords into the search bar.
 - **Tag-Based Search**: Search for visual novels using tags to filter results based on genres, themes, or other attributes.
-- **Advanced Tag Filtering**: Use the advanced tag feature to include or exclude specific tags simultaneously, giving you precise control over your search results.
+- **Advanced Tag Filtering**: Use advanced tags to include or exclude specific tags simultaneously, giving you precise control over your search results.
 - **User-Friendly Design**: A clean and intuitive interface ensures a seamless experience for both creators and players.
 
 ## Current Progress
 
 This project is a work in progress, and I am actively developing new features and refining the platform. Below are some previews of the website's current functionality:
 
-- [Animated Home Page Preview](https://gyazo.com/dfbf49561e0c90bd926b2002d046954a)
-- [Text Search Feature Preview](https://gyazo.com/857f04dbc40863d475654ec375312ba9)
-- [Tag-Based Search Preview](https://gyazo.com/9b68a502ef24e3166ddfb6c590dc0f95)
-- [Advanced Tag Filtering Preview](https://gyazo.com/e4fab1bdd67ae328fa325eac59a63911)
-- [Library Search Preview](https://gyazo.com/d27e793033f6af5cbc4178cbab6f69aa)
+- ![Animated Home Page Preview](public\homepage.gif)
+- ![FramerMotion On Scroll Animations Preview](public\scroll-anim.gif)
+- ![Text Search Preview](public\text-search.gif)
+- ![Tag-Based Search Preview](public\tag-toggling.gif)
+- ![Advanced Tag Filtering Preview](public\tag-inclusion-exclusion.gif)
 
 ## Getting Started
 
