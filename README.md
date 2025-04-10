@@ -12,13 +12,11 @@ Visual Novel Arcade is a web platform designed for creatives and gamers alike. I
 
 ## Current Progress
 
-This project is a work in progress, and I am actively developing new features and refining the platform. Below are some previews of the website's current functionality:
-
-- ![Animated Home Page Preview](public\homepage.gif)
-- ![FramerMotion On Scroll Animations Preview](public\scroll-anim.gif)
-- ![Text Search Preview](public\text-search.gif)
-- ![Tag-Based Search Preview](public\tag-toggling.gif)
-- ![Advanced Tag Filtering Preview](public\tag-inclusion-exclusion.gif)
+- ![Animated Home Page Preview](https://raw.githubusercontent.com/SLachelier/visual-novel-arcade/main/public/homepage.gif)
+- ![FramerMotion On Scroll Animations Preview](https://raw.githubusercontent.com/SLachelier/visual-novel-arcade/main/public/scroll-anim.gif)
+- ![Text Search Preview](https://raw.githubusercontent.com/SLachelier/visual-novel-arcade/main/public/text-search.gif)
+- ![Tag-Based Search Preview](https://raw.githubusercontent.com/SLachelier/visual-novel-arcade/main/public/tag-toggling.gif)
+- ![Advanced Tag Filtering Preview](https://raw.githubusercontent.com/SLachelier/visual-novel-arcade/main/public/tag-inclusion-exclusion.gif)
 
 ## Getting Started
 
@@ -57,4 +55,3 @@ If you'd like to contribute, please fork the repository and submit a pull reques
 This project is licensed under the [Apache License](LICENSE)
 
 Stay tuned for updates as I continue to build and improve Visual Novel Arcade!
-
