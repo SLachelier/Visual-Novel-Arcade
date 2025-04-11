@@ -81,135 +81,137 @@ export default function Library() {
     <motion.section
       ref={libraryRef}
       id="projects"
-      className="scroll-mt-6 mb-[2.5rem]"
+      className="scroll-mt-10 mb-[2rem]"
     >
-      <motion.div
-        style={{ opacity: libraryOpacity, y: libraryY }}
-        className="lg:text-4xl sm:text-2xl text-center pt-[2.5rem] pb-[2rem] font-bold uppercase"
-      >
-        Library
-      </motion.div>
+      <motion.div style={{ opacity: libraryOpacity, y: libraryY }}>
+        <h3 className="lg:text-4xl sm:text-2xl xs:text-2xl text-center pt-[2.5rem] pb-[2rem] font-bold uppercase">
+          Library
+        </h3>
 
-      <motion.div
-        initial={{ opacity: 0, y: 100 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ delay: 0.125 }}
-        className="search-container"
-      >
-        <form
-          name="search"
-          className="flex flex-wrap justify-center items-center max-w-3xl mx-auto mb-6"
-          onMouseOut={(e) => {
-        e.currentTarget.value = '';
-        e.currentTarget.blur();
-          }}
-        >
-          <input
-        className="input focus:outline-none selection:background-transparent border-2 border-amber-300/70"
-        type="search"
-        placeholder=""
-        value={searchQuery}
-        onChange={(e) => setSearchQuery(e.target.value)}
-          />
-        </form>
         <motion.div
-          initial={{ opacity: 0, y: -60}}
-          animate={{ opacity: 1, y: -60 }}
-          transition={{ delay: 0, duration: 0.3 }}
-          className="flex items-center justify-center"
-        >
-          <FontAwesomeIcon icon={faMagnifyingGlass} className="icon text-amber-300/70" />
-        </motion.div>
-        <motion.button
-          className="tag-toggle-btn text-[var(--foreground)] px-4 py-2 rounded-sm mb-4 border-2 border-amber-300/70"
-          onClick={() => setShowTags((prev) => !prev)} // Toggle tag dropdown visibility
           initial={{ opacity: 0, y: 100 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.25 }}
+          transition={{ delay: 0.125 }}
+          className="search-container"
         >
-          {showTags ? "Hide Tags" : "Search by Tags"}
-        </motion.button>
-        {showTags && ( // Conditionally render the tag buttons
-          <motion.div
-        className="lg:text-2xl sm:text-lg text-center text-white tag-btn-container flex flex-wrap justify-center mt-4 border-amber-300/70"
-        initial={{ opacity: 0, y: 100 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ delay: 0.375 }}
+          <form
+            name="search"
+            className="flex flex-wrap justify-center items-center max-w-3xl mx-auto mb-6"
+            onMouseOut={(e) => {
+          e.currentTarget.value = '';
+          e.currentTarget.blur();
+            }}
           >
-        {[
-          "Action",
-          "Adventure",
-          "Celebrity",
-          "Crime",
-          "Rivalry",
-          "Fantasy",
-          "Horror",
-          "Mystery",
-          "Romance",
-          "Sci-fi",
-          "Modern",
-          "Supernatural",
-          "Introspective",
-          "Slice of Life",
-          "Survival",
-          "Thriller",
-          "Tragedy",
-          "Comedy",
-          "Drama",
-          "Historical Fiction",
-          "Psychological",
-          "Dystopian",
-          "School Life",
-          "RPG",
-          "Martial Arts",
-          "Sports",
-          "Isekai",
-          "Time Travel",
-          "Military",
-          "Superheroes",
-          "Villainess",
-          "Reincarnation",
-          "Magic",
-          "Boys' Love",
-          "Girls' Love",
-          "Fan Work",
-          "Completed",
-          "On-going",
-          "Hiatus",
-          "Dropped",
-          "Overpowered MC",
-          "Adaptation",
-          "Weak to Strong",
-          "Oneshot",
-          "Space Opera",
-          "Slow Burn",
-          "Hurt-Comfort",
-          "Apocalypse",
-        ].map((tag, index) => (
+            <input
+            className="input focus:outline-none selection:background-transparent border-2 border-amber-300/80"
+            type="search"
+            placeholder=""
+            value={searchQuery}
+            onChange={(e) => setSearchQuery(e.target.value)}
+            />
+          </form>
+
+          <motion.div
+            initial={{ opacity: 0, y: -60}}
+            animate={{ opacity: 1, y: -60 }}
+            transition={{ delay: 0, duration: 0.3 }}
+            className="flex items-center justify-center"
+          >
+            <FontAwesomeIcon icon={faMagnifyingGlass} className="icon text-amber-300/80" />
+          </motion.div>
+
           <motion.button
-            key={tag}
-            className={`tag-btn ${
-          tagStates[tag] === "include"
-            ? "include"
-            : tagStates[tag] === "exclude"
-            ? "exclude"
-            : ""
-            }`}
-            onClick={() => handleTagClick(tag)}
-            custom={index} // Pass the index to the variants
-            variants={tagVariants}
+            className="tag-toggle-btn text-[var(--foreground)] px-4 py-2 rounded-sm mb-4 border-2 border-amber-300/80"
+            onClick={() => setShowTags((prev) => !prev)} // Toggle tag dropdown visibility
             initial={{ opacity: 0, y: 100 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.05 * index }}
+            transition={{ delay: 0.25 }}
           >
-            {tag}
+            {showTags ? "Hide Tags" : "Search by Tags"}
           </motion.button>
-        ))}
-          </motion.div>
-        )}
+
+          {showTags && ( // Conditionally render the tag buttons
+            <motion.div
+            className="lg:text-2xl sm:text-lg text-center text-white tag-btn-container flex flex-wrap justify-center mt-4 border-amber-300/70"
+            initial={{ opacity: 0, y: 100 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.375 }}
+            >
+            {[
+              "Action",
+              "Adventure",
+              "Celebrity",
+              "Crime",
+              "Rivalry",
+              "Fantasy",
+              "Horror",
+              "Mystery",
+              "Romance",
+              "Sci-fi",
+              "Modern",
+              "Supernatural",
+              "Introspective",
+              "Slice of Life",
+              "Survival",
+              "Thriller",
+              "Tragedy",
+              "Comedy",
+              "Drama",
+              "Historical Fiction",
+              "Psychological",
+              "Dystopian",
+              "School Life",
+              "RPG",
+              "Martial Arts",
+              "Sports",
+              "Isekai",
+              "Time Travel",
+              "Military",
+              "Superheroes",
+              "Villainess",
+              "Reincarnation",
+              "Magic",
+              "Boys' Love",
+              "Girls' Love",
+              "Fan Work",
+              "Completed",
+              "On-going",
+              "Hiatus",
+              "Dropped",
+              "Overpowered MC",
+              "Adaptation",
+              "Weak to Strong",
+              "Oneshot",
+              "Space Opera",
+              "Slow Burn",
+              "Hurt-Comfort",
+              "Apocalypse",
+            ].map((tag, index) => (
+              <motion.button
+                key={tag}
+                className={`tag-btn ${
+                tagStates[tag] === "include"
+                ? "include"
+                : tagStates[tag] === "exclude"
+                ? "exclude"
+                : ""
+                }`}
+                onClick={() => handleTagClick(tag)}
+                custom={index} // Pass the index to the variants
+                variants={tagVariants}
+                initial={{ opacity: 0, y: 100 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.05 * index }}
+              >
+                {tag}
+              </motion.button>
+            ))}
+              </motion.div>
+          )}
+        </motion.div>
       </motion.div>
 
-      <motion.div className="lg:grid-cols-4 grid gap-y-8 gap-x-8 md:grid-cols-3 sm:grid-cols-2 mt-16" layout>
+      <motion.div className="xl:grid-cols-4 lg:grid-cols-3 grid md:grid-cols-3 sm:grid-cols-2 xs:grid-cols-2 mt-16 justify-evenly md:gap-y-10 md:gap-x-8 sm:gap-y-8 sm:gap-x-6 sm:mx-6 xs:mx-4 xxs:mx-2 xxs:gap-x-4 xxs:gap-y-4" layout>
         {filteredNovels.map((novel, index) => {
           const variants = {
             hidden: {
@@ -236,12 +238,13 @@ export default function Library() {
           );
         })}
       </motion.div>
+
       <motion.p
         style={{ opacity: libraryOpacity, y: libraryY }}
-        className="mt-24 flex justify-center text-white text-2xl"
+        className="xxs:mt-40 mt-24 flex justify-center text-center text-white text-2xl"
       >
-        You&apos;ve reached the end of the current library. Check back for more
-        releases later!
+        You&apos;ve reached the end of the current library. 
+        Check back for more releases later!
       </motion.p>
     </motion.section>
   );

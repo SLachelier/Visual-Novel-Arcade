@@ -141,7 +141,7 @@ const StarryBackground: React.FC = () => {
     };
   }, []);
 
-  return <canvas ref={canvasRef} style={{ position: "fixed", top: 0, left: 0, zIndex: -1 }} />;
+  return <canvas ref={canvasRef} className="starry-background" style={{ position: "fixed", top: 0, left: 0, zIndex: -1 }} />;
 };
 
 export default StarryBackground;

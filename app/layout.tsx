@@ -15,11 +15,13 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className='!scroll-smooth'>
-      <body className="">
+      <body>
       <StarryBackground />
-        <Header/>
-          {children}
-        <Footer/>
+        <div className="bg-gradient bg-gradient-to-b from-purple-900/20 to-zinc-950 ">
+          <Header/>
+            {children}
+          <Footer/>
+        </div>
       </body>
     </html>
   )

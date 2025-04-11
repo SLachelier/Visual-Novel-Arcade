@@ -1,4 +1,5 @@
 import type { Config } from "tailwindcss";
+const defaultTheme = require('tailwindcss/defaultTheme');
 
 export default {
   content: [
@@ -7,16 +8,16 @@ export default {
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    extend: {
+    screens: {
+      'xxs': '350px',
+      'xs': '475px',
+      ...defaultTheme.screens,
+    },
+    extend: { 
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
     },
   },
-  plugins: [
-    require('tailwindcss/plugin')(({ addVariant }: { addVariant: (name: string, css: string) => void }) => {
-      addVariant('search-cancel', '&::-webkit-search-cancel-button');
-    }),
-  ],
 } satisfies Config;

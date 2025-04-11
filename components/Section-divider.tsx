@@ -8,7 +8,7 @@ export default function SectionDivider() {
     <div>
       <motion.div className='mt-16 mb-4 hidden sm:block' initial={{ opacity: 0, y: 100 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.125 }}>
         <svg
-          className="animate-bounce w-40 h-14"
+          className="animate-[bounce_1s_ease-in-out_8.5] w-40 h-14"
           fill="none"
           strokeLinecap="square"
           strokeLinejoin="miter"
