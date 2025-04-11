@@ -211,7 +211,9 @@ export default function Library() {
         </motion.div>
       </motion.div>
 
-      <motion.div className="xl:grid-cols-4 lg:grid-cols-3 grid md:grid-cols-3 sm:grid-cols-2 xs:grid-cols-2 mt-16 justify-evenly md:gap-y-10 md:gap-x-8 sm:gap-y-8 sm:gap-x-6 sm:mx-6 xs:mx-4 xxs:mx-2 xxs:gap-x-4 xxs:gap-y-4" layout>
+      <motion.div 
+        className="xl:grid-cols-4 lg:grid-cols-3 grid md:grid-cols-3 sm:grid-cols-2 xs:grid-cols-2 mt-16 justify-evenly md:gap-y-10 md:gap-x-8 sm:gap-y-8 sm:gap-x-6 sm:mx-6 xs:mx-4 xxs:mx-2 xxs:gap-x-4 xxs:gap-y-4 lg:mx-4 md:mx-0 sm:mx-0 xs:mx-0 xxs:mx-0" 
+        layout>
         {filteredNovels.map((novel, index) => {
           const variants = {
             hidden: {

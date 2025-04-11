@@ -30,7 +30,7 @@ export default function Thumbnail({
       style={{ scale, opacity }}
       className="mb-3 last:mb-0 transition-transform duration-500 ease-in-out transform hover:scale-105 will-change-transform w-auto xs:w-[14rem] sm:w-auto"
     >
-      <section className="group rounded-[.25rem] border-2 border-amber-300/70 hover:box-shadow overflow-hidden transition bg-white/10 hover:bg-white/20">
+      <section className="group rounded-[.25rem] border-2 border-amber-300/70 hover:box-shadow overflow-hidden transition bg-white/10 hover:bg-white/20 my-2">
         <div className="thumbnail">
           <Image
             src={imageUrl}
