@@ -12,11 +12,27 @@ Visual Novel Arcade is a web platform designed for creatives and gamers alike. I
 
 ## Current Progress
 
-- ![Animated Home Page Preview](https://raw.githubusercontent.com/SLachelier/visual-novel-arcade/main/public/homepage.gif)
-- ![FramerMotion On Scroll Animations Preview](https://raw.githubusercontent.com/SLachelier/visual-novel-arcade/main/public/scroll-anim.gif)
-- ![Text Search Preview](https://raw.githubusercontent.com/SLachelier/visual-novel-arcade/main/public/text-search.gif)
-- ![Tag-Based Search Preview](https://raw.githubusercontent.com/SLachelier/visual-novel-arcade/main/public/tag-toggling.gif)
-- ![Advanced Tag Filtering Preview](https://raw.githubusercontent.com/SLachelier/visual-novel-arcade/main/public/tag-inclusion-exclusion.gif)
+### Below are some previews of the current features:
+
+#### Animated home page:
+
+![Animated Home Page Preview](https://raw.githubusercontent.com/SLachelier/visual-novel-arcade/main/public/homepage.gif)
+
+#### FramerMotion scroll animations:
+
+![FramerMotion On Scroll Animations Preview](https://raw.githubusercontent.com/SLachelier/visual-novel-arcade/main/public/scroll-anim.gif)
+
+#### Text search:
+
+![Text Search Preview](https://raw.githubusercontent.com/SLachelier/visual-novel-arcade/main/public/text-search.gif)
+
+#### Tag-based search functionality:
+
+![Tag-Based Search Preview](https://raw.githubusercontent.com/SLachelier/visual-novel-arcade/main/public/tag-toggling.gif)
+
+#### Advanced tag filtering with including and excluding tags:
+
+![Advanced Tag Filtering Preview](https://raw.githubusercontent.com/SLachelier/visual-novel-arcade/main/public/tag-inclusion-exclusion.gif)
 
 ## Getting Started
 
@@ -37,13 +53,17 @@ To get started with Visual Novel Arcade in development before its release, follo
 3. Install dependencies:
 
    ```bash
+   npm init
+   ```
+   Then:
+   ```bash
    npm install
    ```
 
-4. Start the development server:
+5. Start the development server:
 
    ```bash
-   npm start
+   npm run dev
    ```
 
 ## Contributing
