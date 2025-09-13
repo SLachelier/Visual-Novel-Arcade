@@ -25,9 +25,9 @@ export default function Header() {
               <li>
                 <Link
                   className={'flex w-full px-3 py-3 transition nav-link'}
-                  href="/contribute"
+                  href="/vn-maker"
                 >
-                  Contribute
+                  Make Your Own
                 </Link>
               </li>
             </>
@@ -40,7 +40,7 @@ export default function Header() {
                 Home
               </Link>
             </li>
-            
+
           )}
         </ul>
       </nav>
