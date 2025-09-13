@@ -99,9 +99,9 @@ h1 {
   padding: 0;
   background: none;
   mask: linear-gradient(rgba(255, 255, 255, 1)) content-box,
-  linear-gradient(rgba(243, 240, 233, 1));
+    linear-gradient(rgba(243, 240, 233, 1));
   -webkit-mask: linear-gradient(rgb(255, 255, 255) 0 0) content-box,
-  linear-gradient(rgba(255, 255, 255, 1) 0 0);
+    linear-gradient(rgba(255, 255, 255, 1) 0 0);
   mask-composite: exclude;
   -webkit-mask-composite: destination-out;
   border: 2px solid transparent;
@@ -135,7 +135,6 @@ h1 {
   align-items: center;
   flex-direction: column;
   align-content: center;
-  
 }
 
 input {
@@ -148,7 +147,7 @@ input {
   font-size: 1.6rem;
   color: rgb(233, 214, 103);
   outline: none;
-  transition: .5s;
+  transition: 0.5s;
   z-index: 4;
   cursor: pointer;
 }
@@ -157,15 +156,15 @@ input {
   width: 350px;
   background-color: rgba(0, 0, 0, 0);
   box-shadow: 0 0 10px 1px #f3d3924d inset;
-  border-radius: .2rem;
+  border-radius: 0.2rem;
   cursor: text;
 }
 
 .search-container .icon {
   position: absolute;
-  top:103.25%;
+  top: 103.25%;
   font-size: 1.5rem;
-  transition: .45s;
+  transition: 0.45s;
   cursor: pointer;
   z-index: -4;
 }
@@ -179,14 +178,14 @@ input {
   border: 2px solid var(--foreground);
   background-color: transparent;
   color: var(--foreground);
-  padding: .25rem .5rem;
-  margin: .25rem;
-  border-radius: .2rem;
+  padding: 0.25rem 0.5rem;
+  margin: 0.25rem;
+  border-radius: 0.2rem;
   cursor: pointer;
 }
 
 .include {
-  border: 2px solid rgb(252,211,77);
+  border: 2px solid rgb(252, 211, 77);
   color: #ffffff;
 }
 
@@ -196,8 +195,18 @@ input {
   text-decoration: line-through;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 768px){
   .starry-background {
     display: none;
   }
+}
+
+/* Custom autofill styling to match the input field design */
+#vn-setname:-webkit-autofill,
+#vn-setname:-webkit-autofill:hover,
+#vn-setname:-webkit-autofill:focus,
+#vn-setname:-webkit-autofill:active {
+  -webkit-box-shadow: rgba(46, 46, 46, 0) !important;
+  -webkit-text-fill-color: white !important;
+  transition: background-color 5000s ease-in-out 0s;
 }
