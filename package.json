@@ -2,6 +2,31 @@
   "name": "vn-arcade",
   "version": "0.1.0",
   "private": true,
+  "description": "A visual novel library and game creation platform.",
+  "keywords": [
+    "game-engine",
+    "game",
+    "library",
+    "visual",
+    "novels",
+    "game",
+    "creation"
+  ],
+  "homepage": "https://github.com/SLachelier/Visual-Novel-Arcade#readme",
+  "bugs": {
+    "url": "https://github.com/SLachelier/Visual-Novel-Arcade/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SLachelier/Visual-Novel-Arcade.git"
+  },
+  "license": "ISC",
+  "author": "Shauna Lachelier",
+  "type": "commonjs",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -14,7 +39,7 @@
     "@fortawesome/free-solid-svg-icons": "^6.7.2",
     "@fortawesome/react-fontawesome": "^0.2.2",
     "framer-motion": "^11.14.1",
-    "next": "15.1.0",
+    "next": "^15.5.3",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
   },
