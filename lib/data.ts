@@ -1,6 +1,6 @@
 import novelImg from "@/public/VNPlaceholder.jpg";
 
-export let novelsData = [
+export const novelsData = [
   {
     title: "Falling with Style",
     description: "A visual novel about competing to be the best.",

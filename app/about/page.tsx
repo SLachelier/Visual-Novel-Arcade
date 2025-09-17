@@ -1,5 +1,5 @@
 import '../../app/globals.css';
-import { motion } from 'framer-motion';
+// import { motion } from 'framer-motion'; // TODO: Add animations later
 
 export default function About() {
   return(

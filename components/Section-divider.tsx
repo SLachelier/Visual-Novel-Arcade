@@ -19,7 +19,7 @@ export default function SectionDivider() {
         >
           <defs>
         <linearGradient id="goldGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-          <stop offset="0%" stopColor="#996600" /> //#996600, #ffaa2b, #f3d392
+          <stop offset="0%" stopColor="#996600" /> {/* #996600, #ffaa2b, #f3d392 */}
           <stop offset="50%" stopColor="#ffaa2b" />
           <stop offset="100%" stopColor="#f3d392" />
         </linearGradient>

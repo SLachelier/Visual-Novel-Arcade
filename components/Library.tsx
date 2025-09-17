@@ -1,18 +1,40 @@
 "use client";
 
-import React, { useRef, useState } from "react";
-import { novelsData } from "@/lib/data";
+import React, { useRef, useEffect, useState } from "react";
+import { createClient } from '../app/utils/supabase/client';
+// import { novelsData } from "@/lib/data";
 import Thumbnail from "./Thumbnails";
 import { motion, useSpring } from "framer-motion";
 import { useLibraryScrollAnimations, useThumbnailsScrollAnimations } from "@/lib/hooks";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
+import type { StaticImageData } from 'next/image';
+
+interface NovelData {
+  title: string;
+  description: string;
+  imageUrl: StaticImageData;
+  tgtLink: string;
+  tags: string[];
+}
 
 export default function Library() {
-  const [selectedTags, setSelectedTags] = useState<string[]>([]);
+  const [novelsData, setNovelsData] = useState<NovelData[]>([])
+  const supabase = createClient()
+  // const [selectedTags, setSelectedTags] = useState<string[]>([]); // TODO: Implement tag selection
   const [searchQuery, setSearchQuery] = useState<string>("");
   const [showTags, setShowTags] = useState<boolean>(false); // State to toggle tag dropdown visibility
   const [tagStates, setTagStates] = useState<Record<string, "neutral" | "include" | "exclude">>({});
+
+  useEffect(() => {
+      const fetchNovels = async () => {
+        const { data } = await supabase.from('novels').select()
+        if (data) {
+          setNovelsData(data)
+        }
+      }
+      fetchNovels()
+    }, [supabase])
 
   const filterNovels = () => {
     return novelsData.filter((novel) => {
