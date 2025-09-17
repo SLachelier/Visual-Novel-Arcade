@@ -2,11 +2,12 @@
 
 import React, { useEffect, useState } from 'react';
 import Link from 'next/link';
-import { usePathname } from 'next/navigation';
+import { usePathname, useRouter } from 'next/navigation';
 import { createClient } from '../app/utils/supabase/client';
 
 export default function Header() {
   const pathname = usePathname();
+  const router = useRouter();
   const isHomePage = pathname === '/';
   const isLoginPage = pathname === '/login';
   const [isAuthenticated, setIsAuthenticated] = useState<boolean | null>(null);
@@ -29,6 +30,13 @@ export default function Header() {
 
     return () => subscription.unsubscribe();
   }, []);
+
+  const handleVNMakerClick = (e: React.MouseEvent) => {
+    if (!isAuthenticated) {
+      e.preventDefault();
+      router.push('/login?message=Please log in or create an account to access the Visual Novel Studio.');
+    }
+  };
 
   return (
     <header className='z-[999] relative flex justify-end flex-direction-column items-center w-full h-12 bg-transparent p-10'>
@@ -88,7 +96,8 @@ export default function Header() {
               <li>
                 <Link
                   className={'flex w-full px-3 py-3 transition nav-link'}
-                  href="/vn-maker">
+                  href="/vn-maker"
+                  onClick={handleVNMakerClick}>
                   Make Your Own
                 </Link>
               </li>

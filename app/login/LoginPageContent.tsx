@@ -442,11 +442,15 @@ function LoginPageContent() {
               <div className={`mt-4 p-4 text-center rounded-lg backdrop-blur-sm ${
                 (message.includes('Check your email') || message.includes('verified successfully') || message.includes('complete registration')) 
                   ? 'bg-green-500/10 border-green-500/20' 
+                  : message.includes('Visual Novel Studio') || message.includes('access')
+                  ? 'bg-blue-500/10 border-blue-500/20'
                   : 'bg-red-500/10 border-red-500/20'
               }`} style={{ 
                 border: `1px solid ${
                   (message.includes('Check your email') || message.includes('verified successfully') || message.includes('complete registration'))
                     ? 'rgba(34, 197, 94, 0.2)' 
+                    : message.includes('Visual Novel Studio') || message.includes('access')
+                    ? 'rgba(59, 130, 246, 0.2)'
                     : 'rgba(239, 68, 68, 0.2)'
                 }`,
                 color: 'var(--foreground)',
