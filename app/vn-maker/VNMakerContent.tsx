@@ -14,8 +14,8 @@ export default function VNMakerContent() {
   };
 
   return (
-    <section className='lg:text-8xl text-center mt-10 sm:text-6xl xs:text-6xl text-6xl py-[3rem] text-gradient stroke-gold-shine'>
-      <div>
+    <section className='lg:text-8xl text-center mt-20 sm:text-6xl xs:text-6xl text-6xl py-[3rem] text-gradient stroke-gold-shine'>
+      <div className='mb-12'>
         <h1>Visual Novel Studio</h1>
       </div>
       <motion.div
