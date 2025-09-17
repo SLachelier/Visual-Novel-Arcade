@@ -169,7 +169,7 @@ function LoginPageContent() {
                 WebkitBackdropFilter: 'blur(20px) saturate(150%)'
               }}
             >
-            <h1 className="pt-8 pb-6 font-bold text-5xl text-center cursor-default text-white">
+            <h1 className="py-4 font-bold text-5xl text-center cursor-default text-white">
               {isRegistering ? 'Create Account' : 'Log in'}
             </h1>
 
